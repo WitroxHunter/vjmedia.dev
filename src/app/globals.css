@@ -14,6 +14,11 @@
   }
 }
 
+html,
+body {
+  font-family: "Gabarito", sans-serif;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);

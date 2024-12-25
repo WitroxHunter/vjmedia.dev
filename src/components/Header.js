@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Header() {
   return (
-    <header className="bg-[#080808] text-white p-4 fixed w-full">
+    <header className="bg-[#080808] text-white px-4 py-3 fixed w-full">
       <nav className="container mx-auto flex justify-between items-center">
         <Link className="" href="/" passHref>
           <Image
@@ -16,18 +16,22 @@ export default function Header() {
         <ul className="flex space-x-4">
           <li>
             <a href="/" className="hover:underline">
-              Home
+              About us
             </a>
           </li>
           <li>
             <a href="/blog" className="hover:underline">
-              Blog
+              Our offer
             </a>
           </li>
           <li>
-            <a href="/contact" className="hover:underline">
-              Contact
-            </a>
+            <Link
+              className="w-auto bg-[#d466ff] hover:bg-[#a94acf] text-white rounded-lg transition-colors flex items-center justify-center text-background text-base px-1"
+              href="/contact"
+              passHref
+            >
+              Contact us
+            </Link>
           </li>
         </ul>
       </nav>

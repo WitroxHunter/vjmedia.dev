@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+
 export default function Header() {
   return (
-    <header className="bg-[#080808] text-white px-4 py-3 fixed w-full">
+    <header className="bg-gradient-to-b from-[#080808] via-[#080808] to-[#00000000] text-white px-4 py-3 fixed w-full">
       <nav className="container mx-auto flex justify-between items-center">
         <Link className="" href="/" passHref>
           <Image

@@ -2,13 +2,34 @@
 
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useFBX } from "@react-three/drei";
-import { Suspense } from "react";
+import { Suspense, useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 function MobilePhone() {
   const phone = useFBX("/MobilePhone_01.fbx");
-  return <primitive object={phone} scale={0.25} position={[0, 0, 0]} />;
+  const [rotation, setRotation] = useState([0, -0.3, -0.03]);
+
+  useEffect(() => {
+    const handleMouseMove = (event) => {
+      const mouseX = event.clientX / window.innerWidth - 0.5;
+      setRotation([0, mouseX * 0.5 - 0.3, -0.03]);
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
+  return (
+    <primitive
+      object={phone}
+      scale={0.25}
+      position={[0, 0, 0]}
+      rotation={rotation}
+    />
+  );
 }
 
 export default function Home() {
@@ -52,12 +73,16 @@ export default function Home() {
           />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-[400px] sm:max-w-[450px] min-h-[90vh] h-[600px] z-10 flex items-center justify-center">
             <Canvas camera={{ position: [0, 0, 5], fov: 50 }}>
-              <ambientLight intensity={0.8} />
-              <directionalLight position={[2, 2, 2]} intensity={1} />
+              <ambientLight intensity={1} />
+              <directionalLight position={[-20, 0, 20]} intensity={0.3} />
               <Suspense fallback={null}>
                 <MobilePhone />
               </Suspense>
-              <OrbitControls enableZoom={false} />
+              <OrbitControls
+                enableRotate={false}
+                enableZoom={false}
+                enablePan={false}
+              />
             </Canvas>
           </div>
         </div>

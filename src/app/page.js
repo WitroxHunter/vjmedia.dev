@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <div className="w-screen min-h-screen flex flex-col justify-center items-center bg-[url('/bg_hero.png')] bg-cover bg-center">
       <div className="flex gap-10 items-center flex-col sm:flex-row w-5/6 max-w-7xl min-h-[80vh]">
-        <div className="flex flex-col w-full sm:w-1/2 text-center sm:text-left sm:mt-0 mt-20">
+        <div className="flex flex-col w-full sm:w-1/2 text-center sm:text-left sm:mt-0 mt-48">
           <h1 className="sm:text-6xl text-4xl font-bold leading-tight">
             Crafting <span className="text-[#B533FD]">websites</span>
             <br />
@@ -48,7 +48,7 @@ export default function Home() {
           </h2>
           <div className="w-full flex flex-col sm:flex-row gap-3 mt-6 justify-center sm:justify-start">
             <Link
-              className="relative overflow-hidden bg-[#B533FD] text-white rounded-lg transition-colors flex items-center justify-center text-2xl px-10 py-3 group"
+              className="relative overflow-hidden bg-gradient-to-r from-[#D466FF] to-[#9905FC] text-white rounded-lg transition-colors flex items-center justify-center text-2xl px-20 py-3 group"
               href="/contact"
               passHref
             >
@@ -57,7 +57,7 @@ export default function Home() {
             </Link>
             <Link
               className="bg-[#f0f0f013] rounded-lg text-white transition-colors flex items-center justify-center gap-2 hover:bg-[#383838] text-2xl px-6 py-3"
-              href="/blog"
+              href="/portfolio"
               passHref
             >
               See examples

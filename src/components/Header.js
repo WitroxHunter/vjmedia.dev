@@ -1,11 +1,33 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="bg-gradient-to-b from-[#080808] via-[#080808] to-[#00000000] text-white px-4 py-3 fixed w-full">
+    <header
+      className={`fixed w-full px-4 py-3 text-white transition-all duration-200 ${
+        isScrolled ? "bg-black bg-opacity-50" : "bg-transparent"
+      }`}
+    >
       <nav className="container mx-auto flex justify-between items-center">
-        <Link className="" href="/" passHref>
+        <Link href="/" passHref>
           <Image
             src="/Logo.svg"
             alt="Next.js logo"

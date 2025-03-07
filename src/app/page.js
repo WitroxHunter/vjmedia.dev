@@ -25,7 +25,7 @@ function MobilePhone() {
   return (
     <primitive
       object={phone}
-      scale={0.25}
+      scale={window.innerWidth < 640 ? 0.17 : 0.25}
       position={[0, 0, 0]}
       rotation={rotation}
     />
@@ -36,23 +36,24 @@ export default function Home() {
   return (
     <div className="w-screen min-h-screen flex flex-col justify-center items-center bg-[url('/bg_hero.png')] bg-cover bg-center">
       <div className="flex gap-10 items-center flex-col sm:flex-row w-5/6 max-w-7xl min-h-[80vh]">
-        <div className="flex flex-col w-full sm:w-1/2 text-center sm:text-left">
-          <h1 className="text-6xl font-bold leading-tight">
+        <div className="flex flex-col w-full sm:w-1/2 text-center sm:text-left sm:mt-0 mt-20">
+          <h1 className="sm:text-6xl text-4xl font-bold leading-tight">
             Crafting <span className="text-[#B533FD]">websites</span>
             <br />
             that drive your <span className="text-[#B533FD]">success</span>
           </h1>
-          <h2 className="text-[#C8C8C8] text-2xl mt-4">
+          <h2 className="text-[#C8C8C8] sm:text-2xl text-xl mt-4">
             We create fast, custom websites tailored to your business needs. Let
             us handle your online presence.
           </h2>
-          <div className="w-full flex flex-row gap-3 mt-6 justify-center sm:justify-start">
+          <div className="w-full flex flex-col sm:flex-row gap-3 mt-6 justify-center sm:justify-start">
             <Link
-              className="bg-[#B533FD] hover:bg-[#8d34b0] text-white rounded-lg transition-colors flex items-center justify-center text-2xl px-20 py-3"
+              className="relative overflow-hidden bg-[#B533FD] text-white rounded-lg transition-colors flex items-center justify-center text-2xl px-10 py-3 group"
               href="/contact"
               passHref
             >
-              Contact us
+              <span className="absolute inset-0 bg-[#9f24e1] w-0 group-hover:w-full transition-all duration-300"></span>
+              <span className="relative">Contact us</span>
             </Link>
             <Link
               className="bg-[#f0f0f013] rounded-lg text-white transition-colors flex items-center justify-center gap-2 hover:bg-[#383838] text-2xl px-6 py-3"
@@ -72,7 +73,7 @@ export default function Home() {
             height={216}
             priority
           />
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-[400px] sm:max-w-[450px] min-h-[90vh] h-[600px] z-10 flex items-center justify-center">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-[300px] sm:max-w-[450px] min-h-[50vh] sm:min-h-[90vh] h-[500px] sm:h-[600px] z-10 flex items-center justify-center">
             <Canvas camera={{ position: [0, 0, 5], fov: 50 }}>
               <ambientLight intensity={1} />
               <directionalLight position={[-20, 0, 20]} intensity={0.3} />

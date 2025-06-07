@@ -5,6 +5,8 @@ import { OrbitControls, useFBX } from "@react-three/drei";
 import { Suspense, useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Button from "@/components/Button";
+import SectionOffer from "@/sections/section-offer";
 
 function MobilePhone() {
   const phone = useFBX("/MobilePhone_01.fbx");
@@ -34,7 +36,7 @@ function MobilePhone() {
 
 export default function Home() {
   return (
-    <div className="w-screen min-h-screen flex flex-col justify-center items-center bg-[url('/bg_hero.png')] bg-cover bg-center">
+    <div className="w-screen min-h-screen flex flex-col justify-center items-center bg-[url('/bg_hero.png')] bg-cover bg-center pt-16">
       <div className="flex gap-10 items-center flex-col sm:flex-row w-5/6 max-w-7xl min-h-[80vh]">
         <div className="flex flex-col w-full sm:w-1/2 text-center sm:text-left sm:mt-0 mt-48">
           <h1 className="sm:text-6xl text-4xl font-bold leading-tight">
@@ -88,14 +90,8 @@ export default function Home() {
             </Canvas>
           </div>
         </div>
-        <Image
-          className="absolute -bottom-16 left-0 w-full"
-          alt="pink wave image"
-          src="/pink_wave.svg"
-          width={100}
-          height={100}
-        ></Image>
       </div>
+      <SectionOffer />
     </div>
   );
 }

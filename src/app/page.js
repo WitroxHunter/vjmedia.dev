@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/Button";
 import SectionOffer from "@/sections/section-offer";
+import SectionProcess from "@/sections/section-process";
 
 function MobilePhone() {
   const phone = useFBX("/MobilePhone_01.fbx");
@@ -94,6 +95,7 @@ export default function Home() {
         </div>
       </section>
       <SectionOffer />
+      <SectionProcess />
     </>
   );
 }

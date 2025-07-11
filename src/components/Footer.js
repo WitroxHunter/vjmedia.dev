@@ -66,7 +66,7 @@ function FooterLinks({ title, items }) {
 export default function Footer() {
   return (
     <div className="relative">
-      <div className="h-full bg-[#111111]">
+      <div className="h-full bg-[#080808]">
         <Image
           src="/graphics/black-waves.svg"
           alt="VJMedia Logo"

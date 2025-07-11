@@ -3,7 +3,7 @@ import Button from "@/components/Button";
 
 export default function SectionOffer() {
   return (
-    <section className="relative flex items-center justify-center w-full min-h-screen bg-gradient-to-b from-[#9905FC] to-[#111111] text-white z-10">
+    <section className="relative flex items-center justify-center w-full min-h-screen bg-gradient-to-b from-[#9905FC] to-[#080808] text-white z-10">
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 py-12 text-center">
         <h2 className="text-4xl sm:text-5xl font-bold mb-12 leading-snug">

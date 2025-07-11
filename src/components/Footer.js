@@ -4,6 +4,65 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+const links = [
+  {
+    href: "http://wrzutnia.ovh/",
+    icon: "/icons/linkedin.svg",
+    alt: "LinkedIn",
+  },
+  {
+    href: "http://wrzutnia.ovh/",
+    icon: "/icons/instagram.svg",
+    alt: "Instagram",
+  },
+  {
+    href: "http://wrzutnia.ovh/",
+    icon: "/icons/youtube.svg",
+    alt: "YouTube",
+  },
+  {
+    href: "http://wrzutnia.ovh/",
+    icon: "/icons/github.svg",
+    alt: "GitHub",
+  },
+];
+
+function SocialLinks() {
+  return (
+    <div className="flex space-y-2 justify-center items-center flex-col">
+      {links.map((link, i) => (
+        <Link
+          key={i}
+          href={link.href}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src={link.icon}
+            alt={link.alt}
+            width={28}
+            height={28}
+            className="w-[28px] h-auto"
+          />
+        </Link>
+      ))}
+    </div>
+  );
+}
+
+function FooterLinks({ title, items }) {
+  return (
+    <div className="flex flex-col space-y-0 text-white self-start">
+      <p className="font-semibold text-2xl">{title}</p>
+      {items.map((item, i) => (
+        <span key={i} className="text-base text-gray-400 text-left">
+          {item}
+        </span>
+      ))}
+    </div>
+  );
+}
+
 export default function Footer() {
   return (
     <div className="relative">
@@ -34,91 +93,27 @@ export default function Footer() {
               />
             </Link>
           </div>
+
           {/* Social Media Icons */}
-          <div className="flex space-y-2 justify-center items-center flex-col">
-            <Link
-              href="http://wrzutnia.ovh/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/icons/linkedin.svg"
-                alt="LinkedIn"
-                height={28}
-                width={28}
-                className="w-[28px] h-auto"
-              />
-            </Link>
+          <SocialLinks />
 
-            <Link
-              href="http://wrzutnia.ovh/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/icons/instagram.svg"
-                alt="Instagram"
-                height={28}
-                width={28}
-                className="w-[28px] h-auto"
-              />
-            </Link>
-
-            <Link
-              href="http://wrzutnia.ovh/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/icons/youtube.svg"
-                alt="YouTube"
-                height={28}
-                width={28}
-                className="w-[28px] h-auto"
-              />
-            </Link>
-
-            <Link
-              href="http://wrzutnia.ovh/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/icons/github.svg"
-                alt="GitHub"
-                height={28}
-                width={28}
-                className="w-[28px] h-auto"
-              />
-            </Link>
-          </div>
           {/* Footer Links VJMedia*/}
-          <div className="flex flex-col space-y-0 text-white self-start">
-            <p className="font-semibold text-2xl">VJMedia</p>
-            <span className="text-base text-gray-400 text-left">About us</span>
-            <span className="text-base text-gray-400 text-left">Our offer</span>
-            <span className="text-base text-gray-400 text-left">
-              Testimonials
-            </span>
-            <span className="text-base text-gray-400 text-left">Contact</span>
-          </div>
+          <FooterLinks
+            title="VJMedia"
+            items={["About us", "Our offer", "Testimonials", "Contact"]}
+          />
+
           {/* Footer Links Our services*/}
-          <div className="flex flex-col space-y-0 text-white self-start">
-            <p className="font-semibold text-2xl">Our services</p>
-            <span className="text-base text-gray-400 text-left">
-              Business cards
-            </span>
-            <span className="text-base text-gray-400 text-left">Websites</span>
-            <span className="text-base text-gray-400 text-left">Graphics</span>
-            <span className="text-base text-gray-400 text-left">Videos</span>
-          </div>
+          <FooterLinks
+            title="Our Services"
+            items={["Business cards", "Websites", "Graphics", "Videos"]}
+          />
+
           {/* Footer Links Social Media*/}
-          <div className="flex flex-col space-y-0 text-white self-start">
-            <p className="font-semibold text-2xl">Social Media</p>
-            <span className="text-base text-gray-400 text-left">Instagram</span>
-            <span className="text-base text-gray-400 text-left">Youtube</span>
-            <span className="text-base text-gray-400 text-left">LinkedIn</span>
-          </div>
+          <FooterLinks
+            title="Social Media"
+            items={["Instagram", "Youtube", "LinkedIn"]}
+          />
         </div>
         <div className="text-gray-500 text-sm align-center mt-8">
           &copy; VJMedia 2025. All rights reserved.

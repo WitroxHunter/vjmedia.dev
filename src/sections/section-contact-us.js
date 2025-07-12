@@ -8,7 +8,7 @@ export default function SectionContactUs() {
       <div className="w-full relative z-10 flex flex-col items-center justify-center h-full px-6 py-12 text-center">
         <SectionHeading>Let's grow your business together.</SectionHeading>
 
-        <div className="w-[50%] flex flex-col items-center space-y-4 mb-8">
+        <div className="w-[40%] flex flex-col items-center space-y-4 mb-8">
           <div className="w-full">
             {/* sm:text-xl  ==  responsiveness*/}
             <p className="text-lg text-gray-300 text-left">

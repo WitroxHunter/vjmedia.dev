@@ -115,7 +115,7 @@ export default function Footer() {
             items={["Instagram", "Youtube", "LinkedIn"]}
           />
         </div>
-        <div className="text-gray-500 text-sm align-center mt-8">
+        <div className="text-gray-600 text-sm align-center mt-8">
           &copy; VJMedia 2025. All rights reserved.
         </div>
       </footer>

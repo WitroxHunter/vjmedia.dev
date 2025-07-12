@@ -3,9 +3,9 @@ import Button from "@/components/Button";
 
 export default function SectionContactUs() {
   return (
-    <section className="relative flex items-center justify-center w-full min-h-screen bg-[#080808] text-white z-10">
+    <section className="relative flex items-center justify-center w-full bg-[#080808] text-white z-10">
       <div className="w-full relative z-10 flex flex-col items-center justify-center h-full px-6 py-12 text-center">
-        <h2 className="text-4xl sm:text-5xl font-bold mb-12 leading-snug">
+        <h2 className="text-4xl sm:text-5xl font-semibold mb-8 leading-snug">
           Let's grow your business together.
         </h2>
 

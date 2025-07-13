@@ -49,11 +49,11 @@ export default function Header() {
           </li>
           <li>
             <Link
-              className="relative overflow-hidden p-2 pl-4 pr-4 rounded-lg text-white bg-gradient-to-br from-[#D466FF] to-[#9905FC] border border-[#D365FE] hover:bg-[#a94acf] transition-colors"
+              className="relative overflow-hidden p-2 pl-4 pr-4 rounded-lg text-white bg-gradient-to-br from-[#D466FF] to-[#9905FC] border border-[#D365FE] hover:bg-[#a94acf] transition-colors group"
               href="/contact"
               passHref
             >
-              <span className="absolute inset-0 bg-[#9f24e1] w-0 group-hover:w-full transition-all duration-300"></span>
+              <span className="absolute inset-0 bg-[#D466FF] w-0 rounded-lg group-hover:w-full transition-all duration-300"></span>
               <span className="relative">Contact us</span>
             </Link>
           </li>

@@ -45,57 +45,57 @@ export default function SectionOtherProducts() {
             title="Branding"
             desc="Complete brand identities tailored to your vision and audience."
             iconSrc={"/icons/branding-icon.svg"}
-            bgSrc={"/graphics/cards/branding-card.webp"}
+            bgSrc={"/graphics/cards/branding.webp"}
           />
           <ProductCard
             title="UX & UI design"
             desc="User-first layouts designed for clarity, beauty, and conversion."
             iconSrc={"/icons/ux-ui-icon.svg"}
-            bgSrc={"/graphics/cards/ux-ui-card.webp"}
+            bgSrc={"/graphics/cards/ux-ui.webp"}
           />
           <ProductCard
             title="Custom graphics"
             desc="Tailored visuals for websites, social media, and print."
             iconSrc={"/icons/custom-graphics-icon.svg"}
-            bgSrc={"/graphics/cards/custom-graphics-card.webp"}
+            bgSrc={"/graphics/cards/custom-graphics.webp"}
           />
 
           <ProductCard
             title="Logos"
             desc="Unique and memorable logo designs that define your business."
             iconSrc={"/icons/logos-icon.svg"}
-            bgSrc={"/graphics/cards/logos-card.webp"}
+            bgSrc={"/graphics/cards/logos.webp"}
           />
           <ProductCard
             title="Website hosting"
             desc="Reliable, fast and secure hosting for all our websites."
             iconSrc={"/icons/website-hosting-icon.svg"}
-            bgSrc={"/graphics/cards/website-hosting-card.webp"}
+            bgSrc={"/graphics/cards/website-hosting.webp"}
           />
           <ProductCard
             title="Motion graphics"
             desc="Smooth, animated elements that bring your content to life."
             iconSrc={"/icons/motion-graphics-icon.svg"}
-            bgSrc={"/graphics/cards/motion-graphics-card.webp"}
+            bgSrc={"/graphics/cards/motion-graphics.webp"}
           />
 
           <ProductCard
             title="Business cards"
             desc="Modern, print-ready cards that leave a lasting impression."
             iconSrc={"/icons/business-card-icon.svg"}
-            bgSrc={"/graphics/cards/business-cards-card.webp"}
+            bgSrc={"/graphics/cards/business-cards.webp"}
           />
           <ProductCard
             title="Video editing"
             desc="Clean, dynamic edits for reels, ads, promos and more."
             iconSrc={"/icons/video-editing-icon.svg"}
-            bgSrc={"/graphics/cards/video-editing-card.webp"}
+            bgSrc={"/graphics/cards/video-editing.webp"}
           />
           <ProductCard
             title="3D modeling"
             desc="Simple, clean 3D assets to elevate your brand visuals."
             iconSrc={"/icons/3d-modeling-icon.svg"}
-            bgSrc={"/graphics/cards/3d-modeling-card.webp"}
+            bgSrc={"/graphics/cards/3d-modeling.webp"}
           />
         </div>
 

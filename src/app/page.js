@@ -96,6 +96,25 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-[3]">
+          <Image
+            src="/icons/scroll-down-icon.svg"
+            alt="VJMedia Logo"
+            width={20}
+            height={20}
+            className="h-[36px] w-auto "
+          />
+        </div>
+        <div className="absolute bottom-0 left-0 w-full bg-gradient-to-b from-black/0 from-50% to-[#9905FC] z-[2]">
+          <Image
+            src="/graphics/purple-waves.svg"
+            alt="VJMedia Logo"
+            width={1920}
+            height={100}
+            className="h-[169px] w-full object-cover"
+          />
+        </div>
       </section>
       <SectionOffer />
       <SectionProcess />

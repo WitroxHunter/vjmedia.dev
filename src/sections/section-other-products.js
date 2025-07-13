@@ -13,7 +13,7 @@ function ProductCard({ title, desc, iconSrc, bgSrc }) {
           alt={`${title} Icon`}
           width={20}
           height={20}
-          className="h-[20px] w-auto m-0"
+          className="h-[22px] w-[22px] m-0"
         />
 
         <h3 className="text-[28px] font-semibold text-left text-gray-200">

@@ -17,7 +17,7 @@ export default function SectionContactUs() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="w-full px-4 py-2 text-gray-300 bg-transparent rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-gray-600"
+              className="w-full px-4 py-2 text-gray-300 bg-transparent rounded-lg border border-[#222222] focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-gray-600"
             />
           </div>
 
@@ -28,7 +28,7 @@ export default function SectionContactUs() {
             </p>
             <textarea
               placeholder="We'd like to know how VJMedia can help me with…"
-              className="w-full h-60 resize-none px-4 py-2 text-gray-300 bg-transparent rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-gray-600"
+              className="w-full h-60 resize-none px-4 py-2 text-gray-300 bg-transparent rounded-lg border border-[#222222] focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-gray-600"
             />
           </div>
 

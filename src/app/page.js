@@ -9,6 +9,8 @@ import Button from "@/components/Button";
 import SectionOffer from "@/sections/section-offer";
 import SectionProcess from "@/sections/section-process";
 import SectionOtherProducts from "@/sections/section-other-products";
+import SectionOurProjects from "@/sections/section-our-projects";
+import SectionTestimonials from "@/sections/section-testimonials";
 import SectionContactUs from "@/sections/section-contact-us";
 import SectionFAQ from "@/sections/section-faq";
 
@@ -119,6 +121,8 @@ export default function Home() {
       <SectionOffer />
       <SectionProcess />
       <SectionOtherProducts />
+      <SectionOurProjects />
+      <SectionTestimonials />
       <SectionContactUs />
       <SectionFAQ />
     </>

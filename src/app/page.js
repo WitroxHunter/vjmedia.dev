@@ -55,7 +55,7 @@ export default function Home() {
             </h2>
             <div className="w-full flex flex-col sm:flex-row gap-3 mt-6 justify-center sm:justify-start">
               <Link
-                className="relative overflow-hidden bg-gradient-to-r from-[#D466FF] to-[#9905FC] text-white rounded-lg transition-colors flex items-center justify-center text-2xl px-20 py-3 group"
+                className="relative overflow-hidden bg-gradient-to-r from-[#D466FF] to-[#9905FC] border border-[#D466FF] text-white rounded-lg transition-colors flex items-center justify-center text-2xl px-20 py-3 group"
                 href="/contact"
                 passHref
               >
@@ -63,7 +63,7 @@ export default function Home() {
                 <span className="relative">Contact us</span>
               </Link>
               <Link
-                className="bg-[#f0f0f013] rounded-lg text-white transition-colors flex items-center justify-center gap-2 hover:bg-[#383838] text-2xl px-6 py-3"
+                className="bg-[#f0f0f013] border border-[#494949] rounded-lg text-white transition-colors flex items-center justify-center gap-2 hover:bg-[#383838] text-2xl px-6 py-3"
                 href="/portfolio"
                 passHref
               >
@@ -100,19 +100,19 @@ export default function Home() {
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-[3]">
           <Image
             src="/icons/scroll-down-icon.svg"
-            alt="VJMedia Logo"
+            alt="Scroll Down Icon"
             width={20}
             height={20}
-            className="h-[36px] w-auto "
+            className="h-[36px] w-auto drop-shadow-xl/50 animate-bounce"
           />
         </div>
         <div className="absolute bottom-0 left-0 w-full bg-gradient-to-b from-black/0 from-50% to-[#9905FC] z-[2]">
           <Image
             src="/graphics/purple-waves.svg"
-            alt="VJMedia Logo"
+            alt="Purple Waves"
             width={1920}
             height={100}
-            className="h-[169px] w-full object-cover"
+            className="h-[168px] w-full object-cover"
           />
         </div>
       </section>

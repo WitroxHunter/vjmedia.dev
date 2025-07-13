@@ -101,7 +101,7 @@ export default function SectionOffer() {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center">
         <SectionHeading>
-          <span className="drop-shadow-lg">
+          <span className="drop-shadow-2xl">
             Turn visitors into customers with
             <br /> our sales-driven websites
           </span>

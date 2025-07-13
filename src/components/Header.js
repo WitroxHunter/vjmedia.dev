@@ -36,7 +36,7 @@ export default function Header() {
             priority
           />
         </Link>
-        <ul className="flex space-x-4">
+        <ul className="flex space-x-12">
           <li>
             <a href="/about" className="hover:underline">
               About us
@@ -49,11 +49,12 @@ export default function Header() {
           </li>
           <li>
             <Link
-              className="w-auto relative bg-gradient-to-r from-[#D466FF] to-[#9905FC] hover:bg-[#a94acf] text-white rounded-lg transition-colors flex items-center justify-center text-background text-base px-3 py-1 -top-1"
+              className="relative overflow-hidden p-2 pl-4 pr-4 rounded-lg text-white bg-gradient-to-br from-[#D466FF] to-[#9905FC] border border-[#D365FE] hover:bg-[#a94acf] transition-colors"
               href="/contact"
               passHref
             >
-              Contact us
+              <span className="absolute inset-0 bg-[#9f24e1] w-0 group-hover:w-full transition-all duration-300"></span>
+              <span className="relative">Contact us</span>
             </Link>
           </li>
         </ul>

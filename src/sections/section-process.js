@@ -114,8 +114,8 @@ export default function SectionProcess() {
             <Image
               src={"/graphics/process/process-stage-2.png"}
               alt="Process Stage 2"
-              width={100}
-              height={100}
+              width={1200}
+              height={530}
               className="absolute right-0 top-0 h-full w-full object-cover z-10"
             />
           </div>

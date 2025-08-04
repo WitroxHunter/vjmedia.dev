@@ -23,7 +23,9 @@ export default function Header() {
   return (
     <header
       className={`fixed w-full py-3 text-white transition-all duration-200 z-50 ${
-        isScrolled ? "bg-[#080808] bg-opacity-100" : "bg-transparent"
+        isScrolled
+          ? "bg-gradient-to-b from-[#080808] to-[#080808] bg-opacity-100"
+          : "bg-gradient-to-b from-[#080808] to-[#080808]/0 bg-opacity-100"
       }`}
     >
       <nav className="container mx-auto flex justify-between items-center">

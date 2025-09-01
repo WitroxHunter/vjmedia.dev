@@ -26,8 +26,8 @@ function ProductCard({ title, desc, iconSrc, bgSrc }) {
       <Image
         src={bgSrc}
         alt={`${title} Background`}
-        width={100}
-        height={100}
+        width={400}
+        height={400}
         className="absolute top-0 right-0 w-[50%] h-full object-cover opacity-10"
       />
     </div>

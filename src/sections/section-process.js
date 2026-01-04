@@ -81,8 +81,8 @@ export default function SectionProcess() {
                 <Image
                   src={"/icons/react-icon.png"}
                   alt={`React icon`}
-                  width={20}
-                  height={20}
+                  width={30}
+                  height={30}
                   className="h-[20px] w-auto"
                 />
                 React
@@ -92,8 +92,8 @@ export default function SectionProcess() {
                 <Image
                   src={"/icons/tailwind-icon.png"}
                   alt={`Tailwind icon`}
-                  width={20}
-                  height={20}
+                  width={30}
+                  height={30}
                   className="h-[20px] w-auto"
                 />
                 Tailwind
@@ -103,8 +103,8 @@ export default function SectionProcess() {
                 <Image
                   src={"/icons/nextjs-icon.png"}
                   alt={`Next.js icon`}
-                  width={20}
-                  height={20}
+                  width={30}
+                  height={30}
                   className="h-[20px] w-auto"
                 />
                 Next.js
@@ -114,8 +114,8 @@ export default function SectionProcess() {
             <Image
               src={"/graphics/process/process-stage-2.png"}
               alt="Process Stage 2"
-              width={1200}
-              height={530}
+              width={1920}
+              height={1920}
               className="absolute right-0 top-0 h-full w-full object-cover z-10"
             />
           </div>

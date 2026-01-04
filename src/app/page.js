@@ -90,8 +90,8 @@ export default function Home() {
               <Image
                 src="/graphics/masonry-grid.webp"
                 alt="Hero Graphic"
-                width={1500}
-                height={1500}
+                width={2000}
+                height={2000}
                 className="h-[100vh] w-auto z-10 opacity-75"
                 style={{
                   transform:
